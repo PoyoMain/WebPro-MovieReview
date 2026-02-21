@@ -1,0 +1,258 @@
+/* General Classes */
+body {
+    margin: 0px;
+    font-family: Verdana, Tahoma, sans-serif;
+    font-size: 8pt;
+    width: 1920px;
+    /* background-image: url("./assets/background.png"); */
+}
+
+/* Banner Classes */
+
+
+.top-banner {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1072 / 100;
+    background-image: url("./assets/banner.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.top-banner {
+    width: 100%;
+    height: 200px;
+    background: url("./assets/banner.png") repeat-x;
+    background-size: auto 200px;
+}
+
+
+/* Content Area Classes */
+.content {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    margin: 20px 0px;
+    gap: 20px;
+    justify-content: center;
+}
+
+.main-content {
+    background-color: white;
+    border: 4px solid grey;
+    width: auto;
+    display: flex;
+    border-radius: 10px;
+    gap: 20px;
+    justify-content: space-around;
+    padding: 0px 20px;
+    justify-content: center;
+}
+
+/* Rating Subsection Classes */
+.rating-section {
+    background-color: white;
+    width: 460px;
+    padding: 10px 5px 0px;
+}
+
+.rating-image {
+    Display: block;
+    margin: 10px auto;
+    width: 300px;
+    max-width: 100%;
+}
+
+.rating-grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    padding: 10px 5px 0px;
+    box-sizing: border-box;
+}
+
+.poster-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.poster-item img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    display: block;
+}
+
+.poster-title {
+    margin-top: 8px;
+    font-size: 8pt;
+    font-weight: bold;
+    color: #333;
+    line-height: 1.2;
+}
+
+/* Review Subsection Classes */
+.review-section {
+    background-image: url("./assets/background.png");
+    background-repeat: repeat;
+    display: flex;
+    justify-content: space-between;
+    gap: 2%;
+    padding: 20px;
+    width: 750px;
+    box-sizing: border-box;
+    margin: 5px auto;
+    border-radius: 10px;
+}
+
+.review-column {
+    width: 47%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.review-box {
+    background-color: #ffffff;
+    box-shadow: 0px 4px 2px rgba(0, 0, 0, 0.226);
+    border-radius: 6px;
+    padding: 8px;
+    max-width: 100%;
+}
+
+.review-box .quote {
+    font-weight: bold;
+    font-size: 8pt;
+}
+
+.review-box .critic-info {
+    font-style: italic;
+}
+
+.review-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.stars-container {
+    display: flex;
+    gap: 2px;
+}
+
+.stars-container img {
+    width: 14px;
+    height: auto;
+    background-color: black;
+}
+
+.review-rating-text {
+    font-weight: bold;
+    color: #555;
+    font-size: 8pt;
+}
+
+/* Sidebar Classes */
+.sidebar {
+    width: 250px;
+    padding: 20px;
+    background-color: #A2B964;
+    border-radius: 10px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.sidebar h2 {
+    font-size: 1.2rem;
+    margin: 0 0 10px 0;
+    font-weight: bold;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar li {
+    margin-bottom: 8px;
+    line-height: 1.2;
+}
+
+.sidebar li strong {
+    font-weight: bold;
+}
+
+.sidebar-footer {
+    margin-top: auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.social-icons {
+    display: flex;
+    gap: 15px;
+    font-size: 1.2rem;
+}
+
+.social-icons img {
+    width: 24px;
+    height: 24px;
+    object-fit: contain;
+}
+
+.watch-trailer-btn {
+    background-color: #333;
+    color: white;
+    padding: 8px 20px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-block;
+}
+
+/* Footer Classes */
+.main-footer {
+    background-color: #17181a;
+    color: white;
+    margin: 0 auto 20px auto;
+    padding: 10px 0;
+    text-align: center;
+    font-size: 15pt;
+    box-sizing: border-box;
+}
+
+/* Validation Badge Classes */
+.fixed-validation-badges {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    z-index: 9999;
+}
+
+/* Common bubble styles */
+.badge {
+    background-color: #333;
+    padding: 6px 14px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-family: Arial, sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+    color: white;
+    text-transform: uppercase;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    white-space: nowrap;
+}
